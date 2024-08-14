@@ -1,18 +1,15 @@
 import Link from "next/link";
+import A from "../components/A";
 
 const Index = () => {
   return (
     <div>
       <ul className="navbar">
         <li>
-          <Link href="/" legacyBehavior>
-            <a className="navbar__link">Main</a>
-          </Link>
+          <A text="Main" href="/" />
         </li>
         <li>
-          <Link href="/users" legacyBehavior>
-            <a className="navbar__link">Users</a>
-          </Link>
+          <A text="Users" href="users" />
         </li>
       </ul>
       <h1>Main Page</h1>
@@ -25,11 +22,6 @@ const Index = () => {
             margin: 0;
             display: flex;
           }
-          .navbar__link {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            margin: 10px;
           }
         `}
       </style>
