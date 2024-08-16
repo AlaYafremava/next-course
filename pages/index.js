@@ -1,31 +1,10 @@
-import Link from "next/link";
-import A from "../components/A";
+import MainContainer from "../components/MainContainer";
 
 const Index = () => {
   return (
-    <div>
-      <ul className="navbar">
-        <li>
-          <A text="Main" href="/" />
-        </li>
-        <li>
-          <A text="Users" href="users" />
-        </li>
-      </ul>
+    <MainContainer keywords="main page">
       <h1>Main Page</h1>
-      <style jsx>
-        {`
-          .navbar {
-            background: tomato;
-            padding: 15px;
-            list-style: none;
-            margin: 0;
-            display: flex;
-          }
-          }
-        `}
-      </style>
-    </div>
+    </MainContainer>
   );
 };
 
